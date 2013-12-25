@@ -86,7 +86,6 @@ define typo3::project (
   
   typo3::install::source::files { "${name}-${version}":
     version => $version,
-    src_path => $typo3_src,
     path	=> $site_path,
 	use_symlink => $use_symlink,
     require => Typo3::Install::Source["${name}-${version}"]
